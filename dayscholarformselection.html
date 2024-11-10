@@ -16,7 +16,7 @@
         body {
             font-family: "Inter", sans-serif;
             height: 100vh;
-            background-image: url('Desktop - 43.png'); 
+            background-image: url('Desktop - 43.png'); /* Replace with correct image path */
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
@@ -32,7 +32,9 @@
             padding-left: 10px;
         }
         #collegelogo {
-            height: 40px;
+            height: 55px;
+            position: relative;
+            right: 10px;
         }
         .container {
             max-width: 800px;
@@ -96,6 +98,12 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        #navbar a{
+            color: white;
+            padding: 10px;
+            position: relative;
+            left: 950px;
+        }
     </style>
     <script>
         function showForm(formType) {
@@ -113,6 +121,8 @@
 <body>
     <div id="navbar">
         <img id="collegelogo" src="Sri-Eshwar-College-Of-Engineering.png" alt="College Logo">
+        <a href="page3(AcceptedRequets).html" id="accepted-requests" class="requests">Accepted  Requests</a>
+        <a href="page2(Pendingrequestspage).html" id="pending-requests" class="requests">Pending Requests</a>
     </div>
     <div class="container">
         <h1>Hi, it seems like you are a Day-Scholar.</h1>
@@ -153,7 +163,7 @@
             </label>
             <label>Attach Document: <input type="file"></label>
             <label>Purpose (if Personal): <textarea rows="3" cols="30"></textarea></label>
-            <label>Time of Leaving the Campus: <input type="text" placeholder="HH:MM"></label>
+            <label>Time of Leaving the Campus: <input type="time"></label>
             <div class="button-container">
                 <button class="button">Next</button>
             </div>
